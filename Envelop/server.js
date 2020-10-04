@@ -11,7 +11,7 @@ let routes = require("./controllers/burgers_controller.js");
 // Run Applicaiton Using Express
 let app = express();
 // Port for the application
-let PORT = 3000;
+let PORT = process.env.PORT || 3000;
 // This is the directory from where static content will be loaded
 let DIRECTORY = "public";
 // Use the directory and load content
